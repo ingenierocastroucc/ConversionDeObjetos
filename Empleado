@@ -1,0 +1,159 @@
+
+package ejemploconversionobjetos;
+
+/**
+ *
+ * @author PEDRO
+ */
+public class Empleado {
+    
+    protected String nombre;
+    protected String apellido;
+    protected int edad;
+    protected int cedula;
+    protected double sueldo;
+    protected String dependencia;
+    protected String direccion;
+    protected String Email;
+    
+    protected Empleado (String nombre,String apellido, 
+            int edad, int cedula, double sueldo, String dependencia, String direccion,String Email){
+
+    this.nombre=nombre;
+    this.apellido=apellido;
+    this.edad=edad;
+    this.cedula=cedula;
+    this.sueldo=sueldo;
+    this.dependencia=dependencia;
+    this.direccion=direccion;
+    this.Email=Email;
+    }
+    
+    public String obtenerDetalles(){
+    
+        return "Nombre:"+nombre+" "+" "+"Apellido:"+" "+apellido+" "
+                +"Edad:"+edad+" "+"Cedula:"+cedula+" "+"Sueldo:"+sueldo+" "+"\nDependencia:"
+                +dependencia+" "+"Direccion:"+direccion+" "+"Email:"+ " " +Email;
+    
+    
+}
+    
+                
+        public String getNombre(){
+    
+        return nombre;
+          
+    }
+
+
+        public void setNombre(String nombre){
+    
+        this.nombre=nombre;  
+            
+            
+        }
+        
+        public String getApellido(){
+    
+        return apellido;
+          
+    }
+
+
+        public void setApellido(String apellido){
+    
+        this.apellido=apellido;  
+            
+            
+        }
+        
+        public int getEdad(){
+    
+        return edad;
+          
+    }
+
+
+        public void setEdad(int edad){
+    
+        this.edad=edad;  
+            
+            
+        }
+        
+        public int getCedula(){
+    
+        return cedula;
+          
+    }
+
+
+        public void setCedula(int cedula){
+    
+        this.cedula=cedula;  
+            
+            
+        }
+
+
+
+
+              
+        public double getSueldo(){
+    
+        return sueldo;
+          
+    }
+
+
+        public void setSueldo(double sueldo){
+    
+        this.sueldo=sueldo;  
+            
+            
+        }
+        
+        public String getDependencia(){
+    
+        return dependencia;
+          
+    }
+
+
+        public void setDependencia(String dependencia){
+    
+        this.dependencia=dependencia;  
+            
+            
+        }
+        
+        public String getDireccion(){
+    
+        return direccion;
+          
+    }
+
+
+        public void setDireccion(String direccion){
+    
+        this.direccion=direccion;  
+            
+            
+        }
+        
+        public String getEmail(){
+    
+        return Email;
+          
+    }
+
+
+        public void setEmail(String Email){
+    
+        this.Email=Email;  
+            
+            
+        }
+        
+}
+
