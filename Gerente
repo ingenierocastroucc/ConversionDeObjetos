@@ -1,0 +1,43 @@
+
+package ejemploconversionobjetos;
+
+/**
+ *
+ * @author PEDRO
+ */
+public class Gerente extends Empleado{
+    
+    private String departamento;
+    
+    public Gerente(String nombre,String apellido, 
+            int edad, int cedula, double sueldo, String dependencia, 
+            String direccion,String Email, String departamento){
+        super(nombre, apellido, edad, cedula, sueldo, dependencia, direccion, Email);
+        this.departamento=departamento;
+    
+    }
+    
+        public String obtenerDetalles(){
+    
+        return super.obtenerDetalles()+" "+"Departamento:"+" "+departamento;
+    
+    
+}
+    
+                
+        public String getDepartamento(){
+    
+        return departamento;
+          
+    }
+
+
+        public void setDepartamento(String departamento){
+    
+        this.departamento=departamento;  
+            
+            
+        }
+    
+}
+
