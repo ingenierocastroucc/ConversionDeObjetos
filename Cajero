@@ -1,0 +1,60 @@
+
+package ejemploconversionobjetos;
+
+/**
+ *
+ * @author PEDRO
+ */
+public class Cajero extends Empleado {
+    
+        private String horario;
+        private String ventanilla;
+    
+    public Cajero(String nombre,String apellido, 
+            int edad, int cedula, double sueldo, String dependencia, 
+            String direccion,String Email,String horario,String ventanilla){
+        super(nombre, apellido, edad, cedula, sueldo, dependencia, direccion, Email);
+        this.horario=horario;
+        this.ventanilla=ventanilla;
+    
+    }
+    
+        public String obtenerDetalles(){
+    
+        return super.obtenerDetalles()+" "+"Horario:"+" "+horario+" "+"Ventanilla Asignada:"+" "+ventanilla;
+    
+    
+}
+    
+                
+        public String getHorario(){
+    
+        return horario;
+          
+    }
+
+
+        public void setHorario(String horario){
+    
+        this.horario=horario;  
+            
+            
+        }
+        
+        public String getVentanilla(){
+    
+        return ventanilla;
+          
+    }
+
+
+        public void setVentanilla(String ventanilla){
+    
+        this.ventanilla=ventanilla;  
+            
+            
+        }
+    
+}
+
+    
