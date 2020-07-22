@@ -15,19 +15,19 @@ public class EjemploConversionObjetos {
         
         Empleado empleado;
         
-        empleado = new Analista("Juan","Martinez", 22, 1064115447,20000,"Ingeniero de soporte",
+        empleado = new Analista("Juan","Martinez", 22, 107262523,20000,"Ingeniero de soporte",
                 "Cr12-N3-18","ingenierocastroucc@gmail.com",TipoAnalista.CREDITO);
         
         imprimirDetalles(empleado);
         
-        empleado = new Cajero("Paola","Tobon", 42, 1064115446,1000,"Cajera",
+        empleado = new Cajero("Paola","Gana", 42, 10641323146,1000,"Cajera",
                 "Cr12-N3-18","ingenierocastroucc@gmail.com","8 AM","Cuatro");
         
         
         
         imprimirDetalles(empleado);
         
-        empleado = new Gerente("Luis","Vergara", 32, 12520817,200000,"Gerente",
+        empleado = new Gerente("Luis","Vergara", 32, 125212317,200000,"Gerente",
                 "Cr12-N3-18","luisvergaraucc@gmail.com","Sistemas");
         
         imprimirDetalles(empleado);
