@@ -1,0 +1,29 @@
+
+package ejemploconversionobjetos;
+
+/**
+ *
+ * @author PEDRO
+ */
+public enum TipoAnalista {
+    
+    FINANCIERO("VERIFICA EL ESTADO DE LAS FINANZAS"),
+    CREDITO("VERIFICA EL STATUS CREDITICIO");
+    
+    private final String descripcion;
+    
+    private TipoAnalista(String descripcion){
+        
+        this.descripcion=descripcion;
+    
+    }
+    
+        public String getDescripcion(){
+    
+        return descripcion;
+          
+    }
+
+    
+}
+
