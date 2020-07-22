@@ -1,0 +1,87 @@
+
+package ejemploconversionobjetos;
+
+/**
+ *
+ * @author PEDRO
+ */
+public class EjemploConversionObjetos {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        Empleado empleado;
+        
+        empleado = new Analista("Juan","Martinez", 22, 1064115447,20000,"Ingeniero de soporte",
+                "Cr12-N3-18","ingenierocastroucc@gmail.com",TipoAnalista.CREDITO);
+        
+        imprimirDetalles(empleado);
+        
+        empleado = new Cajero("Paola","Tobon", 42, 1064115446,1000,"Cajera",
+                "Cr12-N3-18","ingenierocastroucc@gmail.com","8 AM","Cuatro");
+        
+        
+        
+        imprimirDetalles(empleado);
+        
+        empleado = new Gerente("Luis","Vergara", 32, 12520817,200000,"Gerente",
+                "Cr12-N3-18","luisvergaraucc@gmail.com","Sistemas");
+        
+        imprimirDetalles(empleado);
+        
+    }
+    
+    private static void imprimirDetalles(Empleado empleado){
+        
+        String resultado = null;
+        
+        
+        System.out.println("\n Detalle empleado:"+" "+empleado.obtenerDetalles());
+        
+        if(empleado instanceof Analista ){
+        
+            Analista analista = (Analista)empleado;
+            
+            resultado=analista.getTipoAnalistaFinanciero();
+            
+            resultado=((Analista)empleado).tipoAnalista.getDescripcion();
+            
+            System.out.println("Tipo de analista:"+" "+resultado);
+        
+        }
+        
+            else if (empleado instanceof Cajero){
+        
+            resultado=((Cajero)empleado).getHorario();
+            
+            
+            System.out.println("Ventanilla:"+" "+resultado+"Horario:"+" "+resultado); 
+        
+        }
+            
+            else if (empleado instanceof Cajero){
+        
+            resultado=((Cajero)empleado).getVentanilla();
+            
+            
+            System.out.println("Ventanilla:"+" "+resultado); 
+        
+        }
+
+
+        
+        else if (empleado instanceof Gerente){
+        
+            resultado=((Gerente)empleado).getDepartamento();
+            
+            System.out.println("Tipo de departamento:"+" "+resultado); 
+        
+        }
+    
+    }
+    
+}
+
